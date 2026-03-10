@@ -156,13 +156,13 @@ def train_multi_model_pipeline(df):
 
 # --- UI Setup ---
 def main():
-    st.title("🛡️ Institutional Grade Career Intelligence")
+    st.title(" PragyanAI - Institutional Grade Career Intelligence")
     st.markdown("### Benchmarking 16+ Algorithms for Placement & Salary Forecasting")
 
     df = generate_robust_dataset(8000)
     best_c, best_r, scaler, c_metrics, r_metrics, feature_cols = train_multi_model_pipeline(df)
 
-    tabs = st.tabs(["📊 Analytics Dashboard", "⚖️ Algorithm Benchmark", "🔮 Predictive Simulator", "📜 Detailed Data"])
+    tabs = st.tabs([" Analytics Dashboard", " Algorithm Benchmark", " Predictive Simulator", " Detailed Data"])
 
     with tabs[0]:
         st.header("Talent Pool Analytics")
@@ -218,7 +218,7 @@ def main():
             with row3[2]: soft = st.slider("Soft Skills (1-5)", 1.0, 5.0, 4.0)
             with row3[3]: hack = st.number_input("Hackathon Wins", 0, 5, 1)
             
-            submit = st.form_submit_button("🔥 Run Multi-Model Analysis")
+            submit = st.form_submit_button(" Run Multi-Model Analysis")
 
         if submit:
             input_data = np.array([[x_val, xii_val, cgpa_val, courses, interns, projs, certs, apt, soft, hack]])
