@@ -11,7 +11,7 @@ import time
 import json
 
 # --- Page Config ---
-st.image()
+st.image("PragyanAI_Transperent.png")
 st.set_page_config(page_title="Skill-Based Salary & Placement AI", layout="wide", page_icon="🚀")
 
 # --- Custom Styling ---
